@@ -2,7 +2,7 @@
 This application ensure user create an account and enjoy  post, like, comment, update, delete of his own post. And also like, comment friends posts with realtime chat with friends.
 ## Live demo
 [Social Media](https://social-media-client-msw1.onrender.com)
-(Email: epukhan00@gmail.com, Password: 123456)
+(Email: epukhan00@gmail.com, Password: @Socialmedia420@)
 # Tools
 ## Back-end
 * express.js
