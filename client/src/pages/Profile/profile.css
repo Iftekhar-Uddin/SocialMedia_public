@@ -1,0 +1,398 @@
+/* .profile{
+    margin:10px;
+} */
+
+.profileWrapper{
+    /* padding: 10px; */
+    /* background-color:rgba(34, 255, 49, 0.05); */
+    background-color:rgba(34, 247, 140, 0.05);
+}
+
+.profileTopBar{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+
+.totalProfile{
+    height: 100%;
+    position: relative;
+}
+
+
+/* .editbuttonfacebook{
+    color:#ff2701;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.profilecover{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+}
+
+.profilePicture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 300px;
+    border: 2px solid rgb(209, 209, 209);
+}
+
+.totalProfileInfo{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InputUsername{
+    margin-top: 15px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+    text-align: center;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+    background-color:rgba(34, 247, 140, 0);
+}
+
+.InputDescription{
+    margin-top: 10px;
+    border: none;
+    color: #666;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    background-color:rgba(34, 247, 140, 0);
+
+}
+
+.InputUsername:focus {
+    outline: none;
+}
+
+.InputDescription:focus {
+    outline: none;
+}
+
+.totalProfileInfoText{
+    font-size: 23px;
+    padding-top: 60px;
+}
+
+.totalProfileInfoDesc{
+    font-weight: 320;
+    padding-top: 10px;
+}
+
+.profileBottomBar{
+    display: flex;
+    margin: 8px;
+    padding: 5px;
+}
+
+.profileLeft{
+    flex: 3.5;
+    /* margin-top: 12px; */
+}
+
+.profileCenter{
+    flex: 5
+}
+
+.profileCenter123{
+    display:none;
+}
+
+.profileRight{
+    flex: 3.5;
+    /* margin-top: 12px; */
+}
+
+
+.personalInfo{
+    padding-right: 10px;
+}
+
+.addressInfo{
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.EducationInfo{
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.profilespan{
+    padding-top: 7px;
+    display: flex;
+
+}
+
+.generalInfo{
+    padding-left: 10px;
+    /* margin-top: 20px; */
+}
+
+.jobInfo{
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.userFriends{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.userFriend{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.userFriendsImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.userFriendsName{
+    color: black;
+    width: 98px;
+    text-align: center;
+}
+
+.followUnfollow{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+
+}
+
+
+.rightbarFollowButton{
+    margin-bottom: 4px; 
+    border: none;
+    background-color: #ffe601;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.singlePostEdit {
+    float: right;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.shareOption{
+    float:right;
+}
+
+.nowUpdateButton{
+    /* float:right; */
+    display:block;
+    margin:auto;
+    background-color:rgba(34, 247, 140, 0);
+    border: none;
+    margin-top: 50px;
+    justify-content: flex-start;
+    width:100px;
+    color:rgb(131, 130, 130);
+}
+
+.UpdateButton {
+    font-weight: bold;
+    width: 70px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    color: rgb(243, 233, 233);
+    border-radius: 3px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.CancelButton{
+    font-weight: bold;
+    width: 70px;
+    border: none;
+    background-color: rgb(154, 155, 154);
+    padding: 4px;
+    margin-right: 7px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+
+.editprofilebutton{
+    font-weight: bold;
+    border-radius: 0px 5px 0px 5px;
+    width: 100px;
+    border: none;
+    padding: 5px 5px;
+    position: absolute;
+    right: 0;
+    top:0;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: rgb(0, 0, 0);
+
+}
+
+.multipleTwoButton{
+    /* margin-top: 5px;
+    margin-right: 5px; */
+    position: absolute;
+    right:0px;
+    top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.editprofileMoreButton{
+    font-weight: bold;
+    width: 100px;
+    height:25px;
+    border-radius: 0px 5px 0px 5px;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: seagreen;
+}
+
+@media screen and (max-width: 600px) {
+
+    .nowUpdateButton{
+        font-size: 15px;
+        margin-top: 27px;
+        width:80px;
+
+    }
+
+    .InputUsername {
+        margin-top: 10px;
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .InputDescription {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+        overflow-y: scroll;
+    }
+
+    .totalProfileInfoText{
+        font-size: 19px;
+        padding-top: 40px;
+    }
+    
+    .totalProfileInfoDesc{
+        font-weight: 400;
+        font-size: 15px;
+        padding-top: 5px;
+        width: 250px;
+        display: flex;
+        text-align: center;
+    }
+
+    .UpdateButton {
+        width: 60px;
+        padding: 3px;
+        font-size: 12px;
+        border-radius: 2px;
+        margin-top: 13px;
+    }
+    
+    .CancelButton{
+        width: 60px;
+        padding: 3px;
+        font-size: 12px;
+        margin-right: 5px;
+        border-radius: 2px;
+        margin-top: 13px;
+    }
+      
+    .profilecover{
+        height: 250px;
+    }
+    
+    .profilePicture{
+        width: 100px;
+        height: 100px;
+        top: 183px;
+    }
+
+    .profileCenter{
+        /* flex: 3.5;
+        margin-top: 12px; */
+        display: none;
+    }
+
+    .profileLeft{
+        font-size: 14px;;
+    }
+
+    .profileRight{
+        font-size: 14px;;
+    }
+
+    .rightbarFollowButton{
+        height:27px;
+        font-size: 8px;
+        padding: 0px 3px 0px 3px;
+        margin-top: 5px;
+
+    }
+
+    .userFriend{
+        margin-bottom: 5px;
+    }
+
+    .userFriendsImg{
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+    }
+    
+    .userFriendsName{
+        font-size:12px;
+        width: 49px;
+        text-align: center;
+    }
+
+    .profileCenter123{
+        display: contents;
+        margin-top: 15px;
+    }
+
+}

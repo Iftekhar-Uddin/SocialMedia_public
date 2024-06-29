@@ -1,0 +1,134 @@
+.chatOnline{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchInputMessenger{
+    width: 75%;
+    padding: 10px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(180, 180, 180);
+    margin-bottom: 10px;
+}
+
+.inputsearch{
+    display: flex;
+    gap: 1px;
+}
+
+.iconsearch{
+    display: flex;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chatOnlineFriend{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    /* padding-left: 10px; */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.chatOnlineImageContainer{
+    display: flex;
+    position: relative;
+    margin-right:10px;
+}
+
+.chatOnlineImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.offlineBadge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color:rgb(252, 63, 30);
+    position:absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+.OnlineBadge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color:rgb(7, 226, 44);
+    position:absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+/* .chatOnlineName{
+
+} */
+
+
+@media screen and (max-width: 600px){
+    .chatOnline{
+        gap: 6px;
+    }
+
+    .inputsearch{
+        display: flex;
+        gap: 3px;
+    }
+
+    .searchInputMessenger{
+        width: 77%;
+        padding: 3px 0px;
+        padding-left: 3px;
+        border-radius: 6px;
+        border: 1px solid rgb(180, 180, 180);
+        margin-bottom: 5px;
+    }
+    
+    .iconsearch{
+        display: flex;
+        font-size: 13px;
+        padding: 4px 5px;
+        background-color: black;
+        color: white;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .chatOnlineFriend{
+        padding-left: 0px;
+        font-weight: 400;
+
+    }
+    
+    .chatOnlineImageContainer{
+        display: flex;
+        position: relative;
+        margin-right:5px;
+    }
+    
+    .chatOnlineImage{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .chatOnlineName{
+        font-size: 14px;
+    }
+}

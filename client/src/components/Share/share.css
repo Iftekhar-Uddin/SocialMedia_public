@@ -1,0 +1,169 @@
+.share{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    background-color:rgba(255, 255, 255, 1);
+    /* background-color:rgba(34, 255, 49, 0.1); */
+
+}
+
+.shareWrapper{
+    padding: 10px;
+}
+
+.shareTop{
+    display: flex;
+    align-items: center;
+}
+
+.shareProfilePicture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.shareInput{
+    border: none;
+    width: 80%;
+    outline: none;
+    font-size: 22px;
+    background:rgba(34, 255, 49, 0);
+}
+
+.shareHr{
+    margin: 25px
+}
+
+.shareBottom{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shareOptions{
+    display:flex;
+    margin-left: 5px;
+}
+
+.shareOption{
+    display:flex;
+    align-items:center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.shareIcon{
+    font-size: 10px;
+    margin-right: 1px;
+}
+
+.shareOptionText{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.shareButton{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color : rgb(10, 173, 119);
+    /* background-color: rgb(23, 189, 8); */
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+    /* margin-right: 25px; */
+    cursor: pointer;
+
+}
+
+.sharePostText{
+    font-size: 15px;
+    font-weight: 450;
+    padding-left: 4px;
+}
+
+.shareButtonicon{
+    margin-left: 4px;
+}
+
+.shareContent{
+    padding: 0 20px 10px 20px;
+    position: relative;
+}
+
+.shareImg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cancelShareImagehere{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    color:rgb(247, 47, 47);
+}
+
+@media screen and (max-width: 600px) {
+
+    .shareInput{
+        font-size: 13px;
+    }
+
+    .shareHr{
+        margin: 10px
+    }
+
+
+    .shareImg{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .shareOptions{
+        margin-left: 0px;
+    }
+
+    .shareOption{
+        margin-right: 0px;
+    }
+
+
+    .shareIcon{
+        margin-right: 2px;
+    }
+    
+    .shareOptionText{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .shareButton{
+        border: none;
+        padding: 3px;
+        border-radius: 8px;
+        background-color : rgb(10, 173, 119);
+        cursor: pointer;
+        display:flex;
+        align-items:center;
+        cursor: pointer;
+    
+    }
+    
+    .sharePostText{
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 2px;
+    }
+    
+    .shareButtonicon{
+        margin-left: 2px;
+    }
+
+}

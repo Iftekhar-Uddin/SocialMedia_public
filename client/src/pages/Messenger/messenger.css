@@ -1,0 +1,145 @@
+.messenger{
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color:rgba(34, 247, 140, 0.05);
+    /* background-color: goldenrod; */
+}
+
+.chatBox{
+    flex: 9;
+}
+
+.chatBoxWrapper{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+    position: relative;
+}
+
+.chatBoxTop{
+    width: 50%;
+    height:100%;
+    margin-bottom: 25px;
+    overflow-y: scroll;
+}
+
+.chatBoxBottom{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.chatMessageInput{
+    width: 65%;
+    height: 70px;
+    padding: 3px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.chatSubmitButton{
+    margin: 5px 0px;
+    padding: 0px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color:white;
+    background-color:rgb(0, 134, 0);
+}
+
+
+.chatOnline{
+    flex: 3
+}
+
+.hr{
+    width: 4px;
+    background-color: rgb(146, 146, 146);
+}
+
+.chatBoxWrapper, .chatOnlineWrapper{
+    padding: 10px;
+    height: 100%;
+    /* background-color:rgb(100, 193, 209); */
+}
+
+.conversationBody{
+    position: absolute;
+    top: 15%;
+    font-size: 50px;
+    cursor: default;
+    color:azure;
+}
+
+@media screen and (max-width: 600px){
+
+    .chatBox{
+        flex: 8;
+    }
+
+    .chatOnline{
+        flex: 4;
+    }
+
+    .chatBoxWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        position: relative;
+    }
+
+    .chatBoxTop{
+        width: 100%;
+        height:100%;
+        margin-bottom: 20px;
+        overflow-y: scroll;
+    }
+
+    .chatBoxBottom{
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .chatMessageInput{
+        width: 75%;
+        height: 60px;
+        padding: 2px;
+        border-radius: 8px;
+        font-size: 13px;
+        box-sizing: border-box;
+        font-family:sans-serif;
+    }
+    
+    .chatSubmitButton{
+        margin: 12px 0px;
+        padding: 0px 13px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color:white;
+        background-color:rgb(0, 134, 0);
+    }
+
+    .hr{
+        width: 2px;
+        background-color: rgb(146, 146, 146);
+    }
+    
+    .chatBoxWrapper, .chatOnlineWrapper{
+        padding: 5px;
+        height: 100%;
+        /* background-color:rgb(100, 193, 209); */
+    }
+
+}

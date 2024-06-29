@@ -1,0 +1,332 @@
+.topbarContainer{
+    height: 55px;
+    width:100%;
+    background-color: rgb(10, 173, 119);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.topbarLeft{
+    flex: 3;
+}
+
+.logo{
+    display: flex;
+    padding-left: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color:black;
+    font-weight: bold;
+}
+
+.topbarCenter{
+    flex: 6;
+}
+
+.searchBar{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchInput{
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 75%;
+    height:32px;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.iceondiv{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 7%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #ffffff;
+}
+
+
+.searchInput:focus{
+    outline: none;
+}
+
+.peopleDiv{
+    position: relative;
+}
+
+.peoplelist{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    width: 430px;
+    /* height: 400px; */
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.other{
+    padding: 5px;
+}
+
+.peoples{
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.imgpeople{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.friendsorview{
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.friendsorview > h3{
+    font-size: 19px;
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.addbtn{
+    background: rgb(3, 197, 133);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.viewbtn{
+    background: #f8ca31;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+.topbarRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-right: 15px;
+    color: white;
+}
+
+
+.topbarIcons{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+
+.topbarIconItems{
+    cursor: pointer;
+    position: relative;
+}
+
+.iiiccons{
+    font-size: 28px !important;
+}
+
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color:black;
+    border-radius: 50%;
+    color:white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+.topbarImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit:cover;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .topbarLeft{
+        flex: 2;
+    }
+
+    .topbarCenter{
+        flex: 5;
+    }
+
+
+    .logo{
+        padding-left: 6px;
+        font-size: 15px;
+    }
+    
+
+    .searchBar{
+        width: 100%;
+        height: 25px;
+    }
+    
+    .searchInput{
+        width: 57%;
+        height:25px;
+        padding-left: 4px;
+        font-size: 13px;
+    }
+    
+    .iceondiv{
+        height: 25px;
+        width: 16%;
+    }
+
+    .peoplelist{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        width: 250px;
+        /* height: 400px; */
+        background: rgb(235, 235, 235);
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .other{
+        padding: 3px;
+    }
+    
+    .peoples{
+        display: flex;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+    
+    .imgpeople{
+        height: 50px;
+        width: 50px;
+        border-radius: 3px;
+    }
+    
+    .friendsorview{
+        padding-left: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 3px;
+    }
+    
+    .friendsorview > h3{
+        font-size: 17px;
+    }
+    
+    .buttons{
+        display: flex;
+        gap: 3px;
+    }
+    
+    .addbtn{
+        background: rgb(3, 197, 133);
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        border: none;
+        padding: 3px 6px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .viewbtn{
+        background: #f8ca31;
+        border: none;
+        padding: 3px 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 400;
+        color: black;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .searchIcon{
+        font-size: 20px !important;
+    }
+
+
+
+    .topbarRight{
+        flex: 5;
+        padding-right: 6px;
+
+    }
+    
+    
+    .topbarIcons{
+        gap: 8px;
+    }
+    
+    
+    .iiiccons{
+        font-size: 22px !important;
+    }
+    
+    .topbarIconBadge{
+        width: 13px;
+        height: 13px;
+        font-size: 10px;
+    
+    }
+    
+    .topbarImg{
+        width: 35px;
+        height: 35px;
+    }
+
+}
